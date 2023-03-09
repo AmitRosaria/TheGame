@@ -1,73 +1,33 @@
-import java.util.ArrayList;
-//De klasse speler
-class Speler{
-     private String naam;
-     
-     public Speler(String naam){
-      this.naam = naam; 
-      }
-      
-      public void setNaam(String naam){
-      this.naam = naam; 
-      }
-      
-      public String getNaam(){
-      return naam;
-      }
-      
+class Wapen {
+String naam;
+int aanvalskracht;
 
-class Vijand{
-    String naam;
-    int level;
-    int ScorePerVijand;
-    Vijand(String naam, int level, int ScorePerVijand){
-    this.naam = naam;
-    this.level = level;
-    this.ScorePerVijand = ScorePerVijand;
-    }
-
-    public void setNaam(String naam) {
-        this.naam = naam;
-    }
-
-    public void setLevel(int level) {
-        this.level = level;
-    }
-
-    public void setScorePerVijand(int scorePerVijand) {
-        ScorePerVijand = scorePerVijand;
-    }
-
-    public String getNaam() {
+        Game(String naam,int aanvalskracht){
+        }
+        public getNaam(){
         return naam;
-    }
-
-    public int getLevel() {
-        return level;
-    }
-
-    public int getScorePerVijand() {
-        return ScorePerVijand;
-    }
-
-    ArrayList<Vijand> vijand = new ArrayList<>();
+        }
+        public getAanvalskracht(){
+        return aanvalskracht;
+        }
 
 }
+
 public class Main {
     public static void main(String[] args) {
-        // Maak enkele spelers|| naam String,
+        // Maak enkele spelers
         Speler speler1 = new Speler("Frodo");
-        Speler speler2 = new Speler("Aragorn");
-        // Maak enkele vijanden || Naam String, hp int
+        Speler speler2 = new Speler("Aragorn")
+        // Maak enkele vijanden
         Vijand vijand1 = new Vijand("Ork", 5);
         Vijand vijand2 = new Vijand("Sauron", 8);
-        // Maak enkele levels || naam String, lvl int, ScorePerVijand
+        // Maak enkele levels
         Level level1 = new Level("Hobbiton", 1, 10);
         Level level2 = new Level("Mordor", 2, 15);
-        // Maak enkele wapens ||naam String,  aanvalsKracht int
+        // Maak enkele wapens
         Wapen wapen1 = new Wapen("Zwaard", 8);
         Wapen wapen2 = new Wapen("Boog", 5);
-        // Maak het Game-object en voeg alle elementen toe 
+        // Maak het Game-object en voeg alle elementen toe
         Game game = new Game();
         game.addSpeler(speler1);
         game.addSpeler(speler2);
@@ -85,8 +45,7 @@ public class Main {
         for (Vijand vijand : game.getVijanden()) {
             System.out.println("Speler "
                     + huidigeSpeler.getNaam() +
-                    " valt "
-                    nee
+                    " valt 
                     +
                     vijand.getNaam() +
                     " aan met "
