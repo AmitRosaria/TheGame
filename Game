@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 //De klasse speler
 class Speler{
      private String naam;
@@ -32,7 +35,26 @@ public getScorePerVijand(){
 return scorePerVijand;
 }
 
-import java.util.ArrayList;
+
+class Wapen {
+String naam;
+int aanvalskracht;
+
+
+Game(String naam,int aanvalskracht){
+this.naam = naam;
+this.aanvalskracht = aanvalskracht;
+        }
+        public getNaam(){
+        return naam;
+        }
+                public getAanvalskracht(){
+        return aanvalskracht;
+        }
+
+}
+
+
 
 class Vijand{
     String naam;
@@ -64,6 +86,7 @@ class Vijand{
     ArrayList<Vijand> vijand = new ArrayList<>();
 
 }
+
 
 
 
