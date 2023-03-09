@@ -1,20 +1,42 @@
-//De klasse speler
-class Speler{
-     private String naam;
-     
-     public Speler(String naam){
-      this.naam = naam; 
-      }
-      
-      public void setNaam(String naam){
-      this.naam = naam; 
-      }
-      
-      public String getNaam(){
-      return naam;
-      }
-      
+import java.util.ArrayList;
 
+class Vijand{
+    String naam;
+    int level;
+    int ScorePerVijand;
+    Vijand(String naam, int level, int ScorePerVijand){
+    this.naam = naam;
+    this.level = level;
+    this.ScorePerVijand = ScorePerVijand;
+    }
+
+    public void setNaam(String naam) {
+        this.naam = naam;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public void setScorePerVijand(int scorePerVijand) {
+        ScorePerVijand = scorePerVijand;
+    }
+
+    public String getNaam() {
+        return naam;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public int getScorePerVijand() {
+        return ScorePerVijand;
+    }
+
+    ArrayList<Vijand> vijand = new ArrayList<>();
+
+}
 public class Main {
     public static void main(String[] args) {
         // Maak enkele spelers|| naam String,
