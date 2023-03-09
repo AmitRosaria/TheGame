@@ -14,6 +14,24 @@ public getScorePerVijand(){
 return scorePerVijand;
 }
 
+class Wapen {
+String naam;
+int aanvalskracht;
+
+
+Game(String naam,int aanvalskracht){
+this.naam = naam;
+this.aanvalskracht = aanvalskracht;
+        }
+        public getNaam(){
+        return naam;
+        }
+                public getAanvalskracht(){
+        return aanvalskracht;
+        }
+
+}
+
 
 
 
