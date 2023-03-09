@@ -35,7 +35,7 @@ this.scorePerVijand;
 public getScorePerVijand(){
 return scorePerVijand;
 }
-
+}
 
 class Wapen {
 String naam;
