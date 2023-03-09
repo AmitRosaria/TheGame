@@ -1,65 +1,46 @@
-class Wapen {
-String naam;
-int aanvalskracht;
+class Level{
+private String naam;
+private int lvl;
+private int scorePerVijand;
 
-        Game(String naam,int aanvalskracht){
-        }
-        public getNaam(){
-        return naam;
-        }
-        public getAanvalskracht(){
-        return aanvalskracht;
-        }
+Public Level(String naam, int lvl, int scorePerVijand){
+this.naam = naam;
+this.lvl = lvl;
+this.scorePerVijand;
 
 }
-import java.util.ArrayList;
 
-class Vijand{
-    String naam;
-    int hp;
-
-    Vijand(String naam, int level){
-    this.naam = naam;
-    this.hp = hp;
-
-    }
-
-    public void setNaam(String naam) {
-        this.naam = naam;
-    }
-
-    public void setHp(int level) {
-        this.hp = hp;
-    }
-
-
-    public String getNaam() {
-        return naam;
-    }
-
-    public int getHp() {
-        return hp;
-    }
-
-    ArrayList<Vijand> vijand = new ArrayList<>();
-
+public getScorePerVijand(){
+return scorePerVijand;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 public class Main {
     public static void main(String[] args) {
-        // Maak enkele spelers
+        // Maak enkele spelers|| naam String,
         Speler speler1 = new Speler("Frodo");
-        Speler speler2 = new Speler("Aragorn")
-        // Maak enkele vijanden
+        Speler speler2 = new Speler("Aragorn");
+        // Maak enkele vijanden || Naam String, hp int
         Vijand vijand1 = new Vijand("Ork", 5);
         Vijand vijand2 = new Vijand("Sauron", 8);
-        // Maak enkele levels
+        // Maak enkele levels || naam String, lvl int, ScorePerVijand int
         Level level1 = new Level("Hobbiton", 1, 10);
         Level level2 = new Level("Mordor", 2, 15);
-        // Maak enkele wapens
+        // Maak enkele wapens ||naam String,  aanvalsKracht int
         Wapen wapen1 = new Wapen("Zwaard", 8);
         Wapen wapen2 = new Wapen("Boog", 5);
-        // Maak het Game-object en voeg alle elementen toe
+        // Maak het Game-object en voeg alle elementen toe 
         Game game = new Game();
         game.addSpeler(speler1);
         game.addSpeler(speler2);
@@ -77,7 +58,8 @@ public class Main {
         for (Vijand vijand : game.getVijanden()) {
             System.out.println("Speler "
                     + huidigeSpeler.getNaam() +
-                    " valt 
+                    " valt "
+                    nee
                     +
                     vijand.getNaam() +
                     " aan met "
